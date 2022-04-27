@@ -1,6 +1,6 @@
 <footer>
     <div class="sfondo-footer">
-      <div class="container flexato">
+      <div class="container-footer flexato">
         <div class="left-side">
           <div>
             <ul class="lista-footer">
@@ -52,7 +52,7 @@
     </div>
     
     <div class="credits">
-      <div class="container flex">
+      <div class="container-footer flex">
         <div class="credits-left">
           <button>SIGN-UP NOW!!</button>
         </div>
