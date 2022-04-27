@@ -1,10 +1,15 @@
 <header>
-    <div class="container">
-      <img src="../assets/img/dc-logo.png" alt="logo dc" />
+    <div class="container-header">
+      <img src={{url("/images/dc-logo.png")}} alt="logo dc" />
       <ul class="ul-nav">
-        <li v-for="(li, index) in arrayLinkNav" :key="index">
-          <a href="">{{ li.text }}</a>
-        </li>
+        
+        @foreach ($linknav as $elemento)
+
+        <li>
+            <a href="">{{ $elemento['text'] }}</a>
+          </li>
+
+        @endforeach
       </ul>
     </div>
   </header>

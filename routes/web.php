@@ -18,5 +18,24 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    return view('guest.template.home');
+    $linknav = config('linknav');
+    $linkdc = config('linkdc');
+    $linkdccomics = config('linkdccomics');
+    $linkshop = config('linkshop');
+    $linksites = config('linksites');
+    $linkmain = config('linkmain');
+    $carte = config('carte');
+
+
+    $data = [
+        'linknav' => $linknav,
+        'linkdc' => $linkdc,
+        'linkdccomics' => $linkdccomics,
+        'linkshop' => $linkshop,
+        'linksites' => $linksites,
+        'linkmain' => $linkmain,
+        'carte' => $carte,
+
+    ];
+    return view('guest.template.home', $data);
 })->name('home');
